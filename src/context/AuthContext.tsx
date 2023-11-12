@@ -5,7 +5,7 @@ import { createContext, useState } from "react";
 import { ISignInData, IUserData, authService } from "@/services/authService";
 
 interface IAuthContextData {
-  user: IUserData | null;
+  token: string | null;
   isAuth: boolean;
   handleAuthServiceSignIn: (data: ISignInData) => Promise<void>;
 }
@@ -13,17 +13,20 @@ interface IAuthContextData {
 export const AuthContext = createContext({} as IAuthContextData);
 
 export function AuthProvider({ children }: { children: React.ReactNode }) {
-  const [user, setUser] = useState<IUserData | null>(null);
+  const [token, setToken] = useState<string | null>(null);
 
-  const isAuth = !!user;
+  const isAuth = !!token;
 
   async function handleAuthServiceSignIn({ email, password }: ISignInData) {
-    const user = await authService.signIn({ email, password });
-    setUser(user);
+    const token = await authService.signIn({ email, password });
+
+    if (token) {
+      setToken(token);
+    }
   }
 
   return (
-    <AuthContext.Provider value={{ user, isAuth, handleAuthServiceSignIn }}>
+    <AuthContext.Provider value={{ token, isAuth, handleAuthServiceSignIn }}>
       {children}
     </AuthContext.Provider>
   );

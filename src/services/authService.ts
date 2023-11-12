@@ -21,7 +21,7 @@ async function signIn({ email, password }: ISignInData) {
     }),
   };
 
-  const res = await fetch(`${process.env.BASE_URL}/admin/login`, options);
+  const res = await fetch(`http://localhost:3001/auth`, options);
 
   const { body } = await res.json();
   const token = body.data["x-auth-token"];
@@ -30,7 +30,7 @@ async function signIn({ email, password }: ISignInData) {
     maxAge: 60 * 60 * 60,
   });
 
-  return token;
+  return token as string;
 }
 
 export const authService = {
