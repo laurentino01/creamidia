@@ -9,6 +9,10 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      sans: ["Poppins", "sans-serif"],
+      display: ["Paytone One", "sans-serif"],
+    },
     extend: {},
   },
   plugins: [require("daisyui")],
