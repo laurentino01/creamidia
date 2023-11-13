@@ -4,8 +4,8 @@ import ButtonPrimary from "../ButtonPrimary";
 
 export default function NavBar() {
   return (
-    <header className="navbar bg-primary">
-      <div className="flex place-content-between w-full max-w-6xl mx-auto">
+    <header className="navbar bg-primary ">
+      <div className="flex place-content-between w-full max-w-6xl mx-auto sm:px-4">
         <div className="flex-1 ">
           <Link href={"/"}>
             <Image
