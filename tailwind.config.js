@@ -26,6 +26,10 @@ module.exports = {
             "min-height": "42px ",
             height: "42px",
           },
+          ".navbar": {
+            color: "#FBFBFB",
+            "font-size": "22px",
+          },
         },
       },
     ],

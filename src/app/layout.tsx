@@ -4,6 +4,7 @@ import "./globals.css";
 
 import { AuthProvider } from "@/context/AuthContext";
 import NavBar from "@/components/header/NavBar";
+import AppDrawer from "@/layout/AppDrawer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,8 +22,10 @@ export default function RootLayout({
     <html data-theme="creatheme" lang="pt-br">
       <body className={inter.className}>
         <AuthProvider>
-          <NavBar />
-          {children}
+          <AppDrawer>
+            <NavBar />
+            {children}
+          </AppDrawer>
         </AuthProvider>
       </body>
     </html>

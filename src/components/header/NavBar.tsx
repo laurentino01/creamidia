@@ -5,33 +5,46 @@ import ButtonPrimary from "../ButtonPrimary";
 export default function NavBar() {
   return (
     <header className="navbar bg-primary">
-      <div className="flex-1 ">
-        <Link href={"/"}>
-          <Image
-            src={"/images/logoWhite.webp"}
-            alt="logo creamidia"
-            width={147}
-            height={47}
-            className="cursor-pointer"
-          ></Image>
-        </Link>
+      <div className="flex place-content-between w-full max-w-6xl mx-auto">
+        <div className="flex-1 ">
+          <Link href={"/"}>
+            <Image
+              src={"/images/logoWhite.webp"}
+              alt="logo creamidia"
+              width={167}
+              height={67}
+              className="cursor-pointer"
+            ></Image>
+          </Link>
+        </div>
+        <nav>
+          <label htmlFor="my-drawer-4" className="block sm:hidden">
+            <Image
+              src={"/icons/menu.svg"}
+              alt="icone de menu"
+              width={44}
+              height={44}
+              className="cursor-pointer drawer-button"
+            ></Image>
+          </label>
+        </nav>
+        <nav className="flex-none sm:block hidden">
+          <ul className="menu menu-horizontal px-1">
+            <li>
+              <a>Início</a>
+            </li>
+            <li>
+              {" "}
+              <a>Portfólio</a>
+            </li>
+            <li>
+              {" "}
+              <a>Dumps</a>
+            </li>
+          </ul>
+          <ButtonPrimary />
+        </nav>
       </div>
-      <nav className="flex-none">
-        <ul className="menu menu-horizontal px-1">
-          <li>
-            <a>Início</a>
-          </li>
-          <li>
-            {" "}
-            <a>Portfólio</a>
-          </li>
-          <li>
-            {" "}
-            <a>Dumps</a>
-          </li>
-        </ul>
-        <ButtonPrimary />
-      </nav>
     </header>
   );
 }
