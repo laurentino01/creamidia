@@ -5,14 +5,14 @@ import ButtonPrimary from "../ButtonPrimary";
 export default function NavBar() {
   return (
     <header className="navbar bg-primary ">
-      <div className="flex place-content-between w-full max-w-6xl mx-auto sm:px-4">
+      <div className="flex place-content-between w-full max-w-sm sm:max-w-6xl mx-auto sm:px-4">
         <div className="flex-1 ">
           <Link href={"/"}>
             <Image
-              src={"/images/logoWhite.webp"}
+              src={"/images/logoWhite.svg"}
               alt="logo creamidia"
-              width={167}
-              height={67}
+              width={147}
+              height={47}
               className="cursor-pointer"
             ></Image>
           </Link>
