@@ -4,10 +4,10 @@ import { paytoone } from "./layout";
 export default function Home() {
   return (
     <main>
-      <div className="flex items-center justify-center gap-96 min-h-[100vh] bg-primary ">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-96 min-h-[100vh] bg-primary ">
         <div>
           <h1
-            className={` font-bold text-center text-white ${paytoone.className}`}
+            className={`font-bold text-center text-white ${paytoone.className}`}
           >
             <span className="text-6xl">
               {" "}

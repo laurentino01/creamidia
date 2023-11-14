@@ -21,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html data-theme="creatheme" lang="pt-br" className="overflow-x-hidden">
+    <html data-theme="creatheme" lang="pt-br">
       <body className={poppins.className}>
         <AuthProvider>
           <AppDrawer>
