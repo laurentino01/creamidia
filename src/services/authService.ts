@@ -21,7 +21,7 @@ async function signIn({ email, password }: ISignInData) {
     }),
   };
 
-  const res = await fetch(`http://localhost:3001/auth`, options);
+  const res = await fetch(`${process.env.BASE_URL}/auth`, options);
 
   const { body } = await res.json();
   const token = body.data["x-auth-token"];
