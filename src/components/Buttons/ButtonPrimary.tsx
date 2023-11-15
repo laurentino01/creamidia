@@ -12,11 +12,7 @@ export default function ButtonPrimary({
   click,
 }: IButtonPrimaryProps) {
   return (
-    <button
-      type="button"
-      className="btn btn-green"
-      onClick={(arg: any) => click(arg)}
-    >
+    <button className="btn btn-green" onClick={(arg: any) => click(arg)}>
       {children}
     </button>
   );
