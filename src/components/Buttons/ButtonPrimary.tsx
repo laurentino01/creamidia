@@ -1,3 +1,5 @@
+import "./buttons.style.css";
+
 export default function ButtonPrimary() {
-  return <button>Faça um orçamento</button>;
+  return <button className="btn btn-green">Faça um orçamento</button>;
 }

@@ -5,7 +5,7 @@ import TitleAndSub from "@/components/TitleAndSub";
 export default function Home() {
   return (
     <main>
-      <h1> hero </h1>
+      <ButtonPrimary />
     </main>
   );
 }
