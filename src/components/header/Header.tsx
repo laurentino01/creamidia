@@ -2,8 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import "./header.style.css";
 import ButtonPrimary from "../Buttons/ButtonPrimary";
+import MenuMobile from "./MenuMobile";
 
-export default function NavBar() {
+export default function Header() {
   return (
     <header id="header">
       <div className="container">
@@ -18,7 +19,9 @@ export default function NavBar() {
           </Link>
         </div>
 
-        <nav className="menu">
+        <MenuMobile />
+
+        <nav className="menu-desktop">
           <ul>
             <li>
               <Link href={"#"}> Início </Link>
