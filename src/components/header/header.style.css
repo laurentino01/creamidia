@@ -65,26 +65,30 @@
   }
 
   #header .menu-mobile .sidenav {
-    height: 100%; /* 100% Full-height */
-
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
+    height: 100%;
+    position: fixed;
+    z-index: 1;
     top: 96px;
     right: 0;
     background-color: var(--purple-primary);
+    overflow-x: hidden;
 
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   /* The navigation menu links */
   #header .menu-mobile .sidenav a {
-    padding: 32px 64px;
+    padding-top: 16px;
+    padding-left: 12px;
+    height: 64px;
     text-decoration: none;
     font-size: 25px;
     color: var(--light);
-    display: block;
+    width: 100%;
+    border-bottom: 1px solid var(--light);
     transition: 0.3s;
   }
 
@@ -96,13 +100,5 @@
 
   #header .menu-mobile .sidenav Button {
     margin-top: 16px;
-  }
-  /* Position and style the close button (top right corner) */
-  #header .menu-mobile .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
   }
 }
