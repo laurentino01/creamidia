@@ -1,30 +1,11 @@
-import ButtonPrimary from "@/components/ButtonPrimary";
+import ButtonPrimary from "@/components/Buttons/ButtonPrimary";
 import { paytoone } from "./layout";
+import TitleAndSub from "@/components/TitleAndSub";
 
 export default function Home() {
   return (
     <main>
-      <div className="flex flex-col md:flex-row items-center justify-center gap-96 min-h-[100vh] bg-primary ">
-        <div>
-          <h1
-            className={`font-bold text-center text-white ${paytoone.className}`}
-          >
-            <span className="text-6xl">
-              {" "}
-              Eleve o <b className="text-secondary"> nível </b>
-            </span>{" "}
-            <br /> <span className="text-5xl">do seu conteúdo </span>
-          </h1>
-        </div>
-
-        <div>
-          <iframe
-            width="420"
-            height="315"
-            src="https://www.youtube.com/embed/tgbNymZ7vqY"
-          ></iframe>
-        </div>
-      </div>
+      <h1> hero </h1>
     </main>
   );
 }

@@ -1,6 +1,11 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+:root {
+  /* COLORS */
+  --purple-primary: #2a1153;
+  --purple-secondary: #7737e0;
+  --green: #a8fc63;
+  --light: #fbfbfb;
+  --dark: #1c1c1c;
+}
 
 html,
 body {

@@ -1,11 +1,8 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
-
 import { AuthProvider } from "@/context/AuthContext";
 import NavBar from "@/components/header/NavBar";
-import AppDrawer from "@/layout/AppDrawer";
 import { Poppins, Paytone_One } from "next/font/google";
+import "./globals.css";
 
 const poppins = Poppins({ weight: ["400", "700"], subsets: ["latin"] });
 export const paytoone = Paytone_One({ weight: "400", subsets: ["latin"] });
@@ -22,12 +19,10 @@ export default function RootLayout({
 }) {
   return (
     <html data-theme="creatheme" lang="pt-br">
-      <body className={poppins.className}>
+      <body className={`${poppins.className} ${paytoone.className} `}>
         <AuthProvider>
-          <AppDrawer>
-            <NavBar />
-            {children}
-          </AppDrawer>
+          <NavBar />
+          {children}
         </AuthProvider>
       </body>
     </html>
