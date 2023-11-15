@@ -1,5 +1,23 @@
+"use client";
+
 import "./buttons.style.css";
 
-export default function ButtonPrimary() {
-  return <button className="btn btn-green">Faça um orçamento</button>;
+interface IButtonPrimaryProps {
+  children: React.ReactNode;
+  click: (arg: any | undefined) => Promise<any | void> | any | void;
+}
+
+export default function ButtonPrimary({
+  children,
+  click,
+}: IButtonPrimaryProps) {
+  return (
+    <button
+      type="button"
+      className="btn btn-green"
+      onClick={(arg: any) => click(arg)}
+    >
+      {children}
+    </button>
+  );
 }

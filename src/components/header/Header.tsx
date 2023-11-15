@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import "./header.style.css";
@@ -33,7 +35,9 @@ export default function Header() {
               <Link href={"#"}> Dumps </Link>
             </li>
             <li>
-              <ButtonPrimary />
+              <ButtonPrimary click={() => console.log("orçamento")}>
+                Faça um orçamento
+              </ButtonPrimary>
             </li>
           </ul>
         </nav>

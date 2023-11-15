@@ -1,4 +1,4 @@
-import * as nookies from "nookies";
+import { setCookie, parseCookies, destroyCookie } from "nookies";
 
 export interface ISignInData {
   email: string;
@@ -26,13 +26,27 @@ async function signIn({ email, password }: ISignInData) {
   const { body } = await res.json();
   const token = body.data["x-auth-token"];
 
-  nookies.setCookie(undefined, "token", token, {
-    maxAge: 60 * 60 * 60,
-  });
-
-  return token as string;
+  if (token) {
+    setCookie(undefined, "token", token, {
+      maxAge: 60 * 60 * 24,
+    });
+    return token;
+  } else {
+    return null;
+  }
 }
 
+function verifyUser() {
+  const token = parseCookies().token;
+
+  return token;
+}
+
+function logout() {
+  destroyCookie(undefined, "token");
+}
 export const authService = {
   signIn,
+  verifyUser,
+  logout,
 };

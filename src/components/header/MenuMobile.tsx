@@ -41,7 +41,10 @@ export default function MenuMobile() {
         <Link href="#">Inicio</Link>
         <Link href="#">Portfólio</Link>
         <Link href="#">Dumps</Link>
-        <ButtonPrimary />
+        <ButtonPrimary click={() => console.log("orçamento")}>
+          {" "}
+          Faça um orçamento{" "}
+        </ButtonPrimary>
       </div>
     </nav>
   );

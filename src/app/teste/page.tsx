@@ -2,8 +2,14 @@
 
 import { AuthContext } from "@/context/AuthContext";
 import { userService } from "@/services/userService";
-import { redirect } from "next/navigation";
-import { useContext, useEffect, useLayoutEffect, useState } from "react";
+import { redirect, useRouter } from "next/navigation";
+import {
+  useCallback,
+  useContext,
+  useEffect,
+  useLayoutEffect,
+  useState,
+} from "react";
 
 interface IUserData {
   _id: string;
@@ -14,14 +20,16 @@ interface IUserData {
 
 export default function Teste() {
   const [user, setUser] = useState<IUserData | null>(null);
+  const router = useRouter();
 
-  const sign = useContext(AuthContext);
+  const authContext = useContext(AuthContext);
 
   useLayoutEffect(() => {
-    if (!sign.isAuth) {
-      redirect("/");
+    authContext.handleAuthServiceVerifyUser();
+    if (!authContext.isAuth) {
+      redirect("/admin");
     }
-  }, [sign]);
+  }, [authContext]);
 
   async function handleGetUserInfo(token: string) {
     const info = await userService.getUserInfo(token);
@@ -29,14 +37,18 @@ export default function Teste() {
   }
 
   useEffect(() => {
-    handleGetUserInfo(sign.token as string);
-  }, [sign]);
+    handleGetUserInfo(authContext.token as string);
+  }, [authContext]);
 
-  console.log(user);
+  const handleLogout = useCallback(() => {
+    authContext.handleAuthServiceLogout();
+    router.push("/admin");
+  }, [authContext, router]);
 
   return (
     <>
       <h1>{user?.name}</h1>
+      <button onClick={() => handleLogout()}> logout </button>
     </>
   );
 }
