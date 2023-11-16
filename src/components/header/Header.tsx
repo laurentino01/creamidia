@@ -1,10 +1,7 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
-import "./header.style.css";
-import ButtonPrimary from "../Buttons/ButtonPrimary";
 import MenuMobile from "./MenuMobile";
+import "./header.style.css";
 
 export default function Header() {
   return (
@@ -35,9 +32,7 @@ export default function Header() {
               <Link href={"#"}> Dumps </Link>
             </li>
             <li>
-              <ButtonPrimary click={() => console.log("orçamento")}>
-                Faça um orçamento
-              </ButtonPrimary>
+              <button className="btn btn-green"> Faça um orçamento </button>
             </li>
           </ul>
         </nav>

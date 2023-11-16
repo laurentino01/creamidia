@@ -1,11 +1,10 @@
 "use client";
 
 import { redirect, useRouter } from "next/navigation";
-import { parseCookies } from "nookies";
 import { useCallback, useContext, useLayoutEffect, useState } from "react";
 import { AuthContext } from "@/context/AuthContext";
-import "./admin.style.css";
 import ButtonPrimary from "@/components/Buttons/ButtonPrimary";
+import "./admin.style.css";
 
 interface ILoginData {
   email: string;
@@ -30,6 +29,7 @@ export default function Login() {
 
   const handleSignIn = useCallback(
     async (e: React.MouseEvent) => {
+      "use server";
       await authContext.handleAuthServiceSignIn(authUser);
       authContext.handleAuthServiceVerifyUser();
 
@@ -70,7 +70,7 @@ export default function Login() {
               setAuthUser({ email: authUser.email, password: e.target.value })
             }
           />
-          <ButtonPrimary click={handleSignIn}>Login</ButtonPrimary>
+          <button onClick={handleSignIn}>Login</button>
         </form>
       </div>
     </section>

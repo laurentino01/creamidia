@@ -29,3 +29,27 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
+/* components */
+
+/* BUTTON */
+.btn {
+  border: none;
+  cursor: pointer;
+  height: 45px;
+  width: 232px;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  transform: scale(1.03);
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-green {
+  background-color: var(--green);
+  font-weight: 600;
+}

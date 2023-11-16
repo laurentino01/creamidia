@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import "./header.style.css";
 import { useCallback, useState } from "react";
-import ButtonPrimary from "../Buttons/ButtonPrimary";
 
 export default function MenuMobile() {
   const [isHidden, setIsHidden] = useState("hidden");
@@ -41,10 +40,7 @@ export default function MenuMobile() {
         <Link href="#">Inicio</Link>
         <Link href="#">Portfólio</Link>
         <Link href="#">Dumps</Link>
-        <ButtonPrimary click={() => console.log("orçamento")}>
-          {" "}
-          Faça um orçamento{" "}
-        </ButtonPrimary>
+        <button className="btn btn-green">Faça um orçamento</button>
       </div>
     </nav>
   );
