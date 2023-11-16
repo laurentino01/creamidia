@@ -1,0 +1,51 @@
+#hero {
+  background-color: var(--purple-primary);
+}
+
+#hero .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  padding: 108px 20px;
+}
+
+#hero .content-area h1 {
+  margin-top: 22px;
+  line-height: 32px;
+}
+
+#hero .content-area h1 span,
+#hero .content-area p {
+  color: var(--light);
+}
+
+#hero .content-area h1 span:first-of-type {
+  font-size: 72px;
+}
+#hero .content-area h1 span:first-of-type strong {
+  font-size: 72px;
+  color: var(--green);
+}
+
+#hero .content-area h1 span:last-of-type {
+  font-size: 52px;
+}
+
+#hero .content-area p {
+  letter-spacing: 6px;
+  margin-bottom: 12px;
+}
+
+#hero .content-area hr {
+  width: 90%;
+}
+
+#hero .content-area button {
+  margin-top: 32px;
+}
+
+#hero .video-area iframe {
+  border-radius: 15px;
+  border: none;
+}

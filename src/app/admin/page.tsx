@@ -3,7 +3,7 @@
 import { redirect, useRouter } from "next/navigation";
 import { useCallback, useContext, useLayoutEffect, useState } from "react";
 import { AuthContext } from "@/context/AuthContext";
-import ButtonPrimary from "@/components/Buttons/ButtonPrimary";
+
 import "./admin.style.css";
 
 interface ILoginData {
