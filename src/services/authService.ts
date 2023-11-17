@@ -22,6 +22,7 @@ async function signIn({ email, password }: ISignInData) {
   };
 
   const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/auth`, options);
+  console.log(process.env.NEXT_PUBLIC_BASE_URL);
 
   const { body } = await res.json();
   const token = body.data["x-auth-token"];
