@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html data-theme="creatheme" lang="pt-br">
+    <html lang="pt-br">
       <body className={`${poppins.className} ${paytoone.className} `}>
         <AuthProvider>
           <Header />
