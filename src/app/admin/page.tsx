@@ -30,8 +30,9 @@ export default function Login() {
 
   const handleSignIn = useCallback(
     async (e: React.MouseEvent) => {
+      e.preventDefault();
       await authContext.handleAuthServiceSignIn(authUser);
-      authContext.handleAuthServiceVerifyUser();
+      /*  authContext.handleAuthServiceVerifyUser(); */
 
       if (authContext.isAuth) {
         redirect("/admin/dashboard");
