@@ -78,7 +78,11 @@ export default function Login() {
               setAuthUser({ email: authUser.email, password: e.target.value })
             }
           />
-          <button className="btn btn-green" onClick={handleSignIn}>
+          <button
+            type="button"
+            className="btn btn-green"
+            onClick={handleSignIn}
+          >
             Login
           </button>
         </form>
