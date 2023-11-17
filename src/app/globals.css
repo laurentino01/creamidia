@@ -19,7 +19,7 @@ body {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   color: var(--dark);
-  font-size: 18px;
+  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
   transition: 0.3s;
 }
 

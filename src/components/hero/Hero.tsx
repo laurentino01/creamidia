@@ -22,11 +22,7 @@ export default function Hero() {
         </div>
 
         <div className="video-area">
-          <iframe
-            width="532"
-            height="315"
-            src="https://www.youtube.com/embed/tgbNymZ7vqY?&controls=0"
-          ></iframe>
+          <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY?&controls=0"></iframe>
         </div>
       </div>
     </section>
