@@ -1,0 +1,75 @@
+#dashboard_header {
+  background-color: var(--purple-primary);
+}
+
+#dashboard_header .container {
+  max-width: 1440px;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  padding: 12px;
+}
+
+#dashboard_header .menu-dashboard {
+  display: block;
+}
+
+#dashboard_header .menu-dashboard img {
+  cursor: pointer;
+}
+#dashboard_header .menu-dashboard .hidden {
+  display: none;
+}
+#dashboard_header .menu-dashboard .show {
+  display: block;
+}
+
+#dashboard_header .menu-dashboard .showSideNav {
+  width: 300px;
+}
+#dashboard_header .menu-dashboard .hiddenSideBar {
+  width: 0;
+}
+
+#dashboard_header .menu-dashboard .sidenav {
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 96px;
+  left: 0;
+  background-color: var(--purple-primary);
+  overflow-x: hidden;
+
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* The navigation menu links */
+#dashboard_header .menu-dashboard .sidenav a {
+  padding-top: 16px;
+  padding-left: 12px;
+  height: 72px;
+  text-decoration: none;
+  font-size: 18px;
+  color: var(--light);
+  width: 100%;
+  border-bottom: 1px solid var(--light);
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+#dashboard_header .menu-mobile .sidenav a:hover {
+  background-color: var(--green);
+  color: var(--dark);
+}
+
+#dashboard_header .menu-mobile .sidenav Button {
+  margin-top: 16px;
+}
+
+#dashboard_header .logo-area img {
+  width: 96px;
+  margin-bottom: 0px;
+}

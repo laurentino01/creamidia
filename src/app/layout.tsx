@@ -20,10 +20,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body className={`${poppins.className} ${paytoone.className} `}>
-        <AuthProvider>
-          <Header />
-          {children}
-        </AuthProvider>
+        <AuthProvider>{children}</AuthProvider>
       </body>
     </html>
   );

@@ -5,6 +5,7 @@ import { useCallback, useContext, useLayoutEffect, useState } from "react";
 import { AuthContext } from "@/context/AuthContext";
 
 import "./admin.style.css";
+import Image from "next/image";
 
 interface ILoginData {
   email: string;
@@ -23,18 +24,17 @@ export default function Login() {
   useLayoutEffect(() => {
     authContext.handleAuthServiceVerifyUser();
     if (authContext.isAuth) {
-      redirect("/teste");
+      redirect("/admin/dashboard");
     }
   }, [authContext]);
 
   const handleSignIn = useCallback(
     async (e: React.MouseEvent) => {
-      "use server";
       await authContext.handleAuthServiceSignIn(authUser);
       authContext.handleAuthServiceVerifyUser();
 
       if (authContext.isAuth) {
-        redirect("/teste");
+        redirect("/admin/dashboard");
       }
     },
     [authContext, authUser]
@@ -43,6 +43,14 @@ export default function Login() {
   return (
     <section id="login-area">
       <div className="container">
+        <div>
+          <Image
+            src={"/images/logoWhite.svg"}
+            alt="Logo creamidia"
+            width={234}
+            height={117}
+          />
+        </div>
         <form>
           <label>
             <b>Email</b>
@@ -70,7 +78,9 @@ export default function Login() {
               setAuthUser({ email: authUser.email, password: e.target.value })
             }
           />
-          <button onClick={handleSignIn}>Login</button>
+          <button className="btn btn-green" onClick={handleSignIn}>
+            Login
+          </button>
         </form>
       </div>
     </section>

@@ -6,10 +6,13 @@ async function getUserInfo(token: string) {
       "x-auth-token": token,
     },
   };
-  const res = await fetch(`${process.env.BASE_URL}/user/profile`, options);
+  const res = await fetch(
+    `${process.env.NEXT_PUBLIC_BASE_URL}/user/profile`,
+    options
+  );
 
   const { body } = await res.json();
-
+  console.log(body);
   return body.data;
 }
 
