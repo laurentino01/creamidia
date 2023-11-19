@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { AuthProvider } from "@/context/AuthContext";
-import Header from "@/components/header/Header";
+
 import { Poppins, Paytone_One } from "next/font/google";
 import "./globals.css";
 

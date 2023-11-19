@@ -2,16 +2,20 @@
   min-height: 600px;
   background-color: var(--light);
   padding: 120px 20px;
+  position: relative;
 }
 
 #testimonials .container {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  width: 100%;
 }
 
 #testimonials .content-area {
   text-align: center;
+  margin-bottom: 82px;
 }
 
 #testimonials .content-area h2 {

@@ -16,7 +16,8 @@
     "next-auth": "^4.24.4",
     "nookies": "^2.5.2",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "swiper": "^11.0.4"
   },
   "devDependencies": {
     "@types/cookie": "^0.5.4",

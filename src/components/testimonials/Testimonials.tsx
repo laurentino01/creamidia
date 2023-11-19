@@ -1,3 +1,4 @@
+import Courosel from "./Courosel";
 import "./testimonials.style.css";
 
 export default function Testimonials() {
@@ -15,7 +16,7 @@ export default function Testimonials() {
             </div>
           </div>
 
-          <div></div>
+          <Courosel />
         </div>
       </section>
     </>

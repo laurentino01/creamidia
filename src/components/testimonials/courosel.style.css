@@ -1,0 +1,50 @@
+.courosel {
+  display: flex;
+  gap: 42px;
+  margin-bottom: 32px;
+  cursor: pointer;
+  width: 100%;
+  overflow-x: hidden;
+
+  position: absolute;
+}
+
+.card {
+}
+
+.button-nav-container {
+  margin-top: 142px;
+  display: flex;
+  gap: 8px;
+}
+
+.button-nav-container > div {
+  position: relative;
+}
+
+.button-nav {
+  cursor: pointer;
+  width: 14px;
+  height: 14px;
+  background-color: rgba(184, 184, 184, 0.349);
+  border-radius: 100%;
+  transition: 0.3s;
+  position: absolute;
+  top: 5px;
+  z-index: 2;
+}
+
+.button-nav-container > div input[type="radio"]:checked + .button-nav {
+  background-color: var(--purple-secondary);
+}
+
+.button-nav-container input[type="radio"] {
+  position: relative;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 1;
+}
+
+.button-nav:hover {
+  background-color: var(--purple-secondary);
+}
