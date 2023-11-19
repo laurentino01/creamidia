@@ -30,7 +30,8 @@
   border-radius: 100%;
   transition: 0.3s;
   position: absolute;
-  top: 5px;
+  top: 3px;
+  left: 0px;
   z-index: 2;
 }
 

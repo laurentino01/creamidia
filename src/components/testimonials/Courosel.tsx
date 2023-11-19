@@ -60,13 +60,18 @@ export default function Courosel() {
     setMove(activeTestimonial[currentIndex]);
   }
 
+  useEffect(() => {
+    const listInput = document.querySelectorAll("input[type='radio']");
+    listInput[0].setAttribute("checked", "");
+  }, []);
+
   return (
     <div>
       <div className="courosel" style={{ left: `${move}%` }}>
         {testimonials.map((item) => (
           <div
             className={`card ${active?.index === item.index ? "active" : ""}`}
-            key={item.img}
+            key={item.index}
           >
             <div>{item.img}</div>
 
