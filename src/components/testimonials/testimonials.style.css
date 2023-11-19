@@ -1,0 +1,41 @@
+#testimonials {
+  min-height: 600px;
+  background-color: var(--light);
+  padding: 120px 20px;
+}
+
+#testimonials .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#testimonials .content-area {
+  text-align: center;
+}
+
+#testimonials .content-area h2 {
+  margin-top: 32px;
+  line-height: 42px;
+}
+
+#testimonials .content-area h2 {
+  font-size: 52px;
+}
+
+#testimonials .content-area h2 span {
+  font-size: 52px;
+  color: var(--purple-secondary);
+}
+
+#testimonials .content-area p {
+  font-size: 14px;
+  letter-spacing: 6px;
+  margin-bottom: 12px;
+}
+
+#testimonials .content-area hr {
+  margin: 0 auto;
+  width: 62%;
+  border: 1px solid var(--purple-primary);
+}
