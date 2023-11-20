@@ -59,24 +59,22 @@ export default function Courosel() {
   ]);
 
   return (
-    <div>
-      <div className="courosel" id="courosel">
-        {testimonials.map((item) => (
-          <div className="courosel-card" key={item.index}>
-            <div
-              className="coursel-image"
-              style={{
-                backgroundImage: `url("/images/testimonials/${item.img}") `,
-              }}
-            ></div>
+    <div className="courosel" id="courosel">
+      {testimonials.map((item) => (
+        <div className="courosel-card" key={item.index}>
+          <div
+            className="coursel-image"
+            style={{
+              backgroundImage: `url("/images/testimonials/${item.img}") `,
+            }}
+          ></div>
 
-            <div>
-              <h6> {item.name} </h6>
-              <p> {item.function} </p>
-            </div>
+          <div>
+            <h6> {item.name} </h6>
+            <p> {item.function} </p>
           </div>
-        ))}
-      </div>
+        </div>
+      ))}
     </div>
   );
 }

@@ -39,6 +39,6 @@
   #courosel.courosel {
     flex-wrap: nowrap;
     overflow-x: scroll;
-    margin-left: 500px;
+    justify-content: flex-start;
   }
 }

@@ -1,7 +1,7 @@
 #testimonials {
   min-height: 600px;
   background-color: var(--light);
-  padding: 120px 20px;
+  padding: 120px 16px;
 }
 
 #testimonials .container {
@@ -9,7 +9,6 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 100%;
 }
 
 #testimonials .content-area {
@@ -20,14 +19,12 @@
 #testimonials .content-area h2 {
   margin-top: 32px;
   line-height: 42px;
-}
-
-#testimonials .content-area h2 {
-  font-size: 52px;
+  font-size: clamp(2.625rem, 2.375rem + 1.25vw, 3.25rem);
+  white-space: nowrap;
 }
 
 #testimonials .content-area h2 span {
-  font-size: 52px;
+  font-size: clamp(2.625rem, 2.375rem + 1.25vw, 3.25rem);
   color: var(--purple-secondary);
 }
 
