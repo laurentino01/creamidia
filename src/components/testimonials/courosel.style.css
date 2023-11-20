@@ -1,51 +1,39 @@
-.courosel {
+#courosel.courosel {
   display: flex;
-  gap: 42px;
+  padding: 0 20px;
+  gap: 32px;
   margin-bottom: 32px;
-  cursor: pointer;
   width: 100%;
-  overflow-x: hidden;
-
-  position: absolute;
+  margin-right: -100%;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-
-.card {
-}
-
-.button-nav-container {
-  margin-top: 142px;
+#courosel .courosel-card {
   display: flex;
-  gap: 8px;
+  flex-direction: column;
+  align-items: center;
 }
 
-.button-nav-container > div {
-  position: relative;
+#courosel .courosel-card h6 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  white-space: nowrap;
 }
 
-.button-nav {
-  cursor: pointer;
-  width: 14px;
-  height: 14px;
-  background-color: rgba(184, 184, 184, 0.349);
+#courosel .courosel-card p {
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+#courosel .coursel-image {
+  width: 120px;
+  height: 120px;
+  background-color: aqua;
   border-radius: 100%;
-  transition: 0.3s;
-  position: absolute;
-  top: 3px;
-  left: 0px;
-  z-index: 2;
-}
+  margin-bottom: 16px;
 
-.button-nav-container > div input[type="radio"]:checked + .button-nav {
-  background-color: var(--purple-secondary);
-}
-
-.button-nav-container input[type="radio"] {
-  position: relative;
-  cursor: pointer;
-  opacity: 0;
-  z-index: 1;
-}
-
-.button-nav:hover {
-  background-color: var(--purple-secondary);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }

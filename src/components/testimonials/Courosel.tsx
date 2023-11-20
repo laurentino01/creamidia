@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import "./courosel.style.css";
 
 interface ITestimonialsData {
@@ -13,89 +13,67 @@ interface ITestimonialsData {
 }
 
 export default function Courosel() {
-  const [active, setActive] = useState<ITestimonialsData>();
-
   const [testimonials, setTestimonials] = useState<ITestimonialsData[]>([
     {
       index: 1,
-      img: "nada",
+      img: "whindersson-nunes-3.png",
       name: "Whindersson Nunes",
       function: "Comediante e Ator",
     },
     {
       index: 2,
-      img: "nada",
-      name: "Whindersson Nunes",
-      function: "Comediante e Ator",
+      img: "jhon-vlogs.png",
+      name: "Jon Vlogs",
+      function: "Youtuber e Empresário",
     },
     {
       index: 3,
-      img: "nada",
-      name: "Whindersson Nunes",
-      function: "Comediante e Ator",
+      img: "joao-caetano.png",
+      name: "João Caetano",
+      function: "Youtuber e Empresário",
     },
     {
       index: 4,
-      img: "nada",
-      name: "Whindersson Nunes",
-      function: "Comediante e Ator",
+      img: "neox.png",
+      name: "Gabriel Neox",
+      function: "Youtuber e Empresário",
+    },
+    {
+      index: 5,
+      img: "viros.webp",
+      name: "Viros",
+      function: "Youtuber e Empresário",
+    },
+    {
+      index: 6,
+      img: "daniel-dourado.webp",
+      name: "Daniel Dourado",
+      function: "Real State e Empresário",
+    },
+    {
+      index: 7,
+      img: "gui.webp",
+      name: "Gui Oliveira",
+      function: "Youtuber e Empresário",
     },
   ]);
 
-  const [move, setMove] = useState(45);
-
-  function getIndex(testimonial: ITestimonialsData) {
-    setActive(testimonial);
-    const currentIndex = testimonial.index;
-
-    const activeTestimonial: any = {
-      1: 45,
-      2: 20,
-      3: -0o5,
-      4: -30,
-      5: -55,
-      6: -80,
-    };
-
-    setMove(activeTestimonial[currentIndex]);
-  }
-
-  useEffect(() => {
-    const listInput = document.querySelectorAll("input[type='radio']");
-    listInput[0].setAttribute("checked", "");
-  }, []);
-
   return (
     <div>
-      <div className="courosel" style={{ left: `${move}%` }}>
+      <div className="courosel" id="courosel">
         {testimonials.map((item) => (
-          <div
-            className={`card ${active?.index === item.index ? "active" : ""}`}
-            key={item.index}
-          >
-            <div>{item.img}</div>
+          <div className="courosel-card" key={item.index}>
+            <div
+              className="coursel-image"
+              style={{
+                backgroundImage: `url("/images/testimonials/${item.img}") `,
+              }}
+            ></div>
 
             <div>
               <h6> {item.name} </h6>
               <p> {item.function} </p>
             </div>
-          </div>
-        ))}
-      </div>
-      <div className="button-nav-container">
-        {testimonials.map((item) => (
-          <div key={item.index}>
-            <input
-              type="radio"
-              id={String(item.index)}
-              name="buttons"
-              value={item.index}
-            />
-            <label
-              htmlFor={String(item.index)}
-              className="button-nav"
-              onClick={() => getIndex(item)}
-            ></label>
           </div>
         ))}
       </div>
