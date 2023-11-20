@@ -2,7 +2,6 @@
   min-height: 600px;
   background-color: var(--light);
   padding: 120px 20px;
-  position: relative;
 }
 
 #testimonials .container {
