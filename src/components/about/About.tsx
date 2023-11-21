@@ -1,3 +1,4 @@
+import Image from "next/image";
 import "./about.style.css";
 
 export default function About() {
@@ -5,7 +6,12 @@ export default function About() {
     <section id="about">
       <div className="container">
         <div>
-          <img src="" alt="" />
+          <Image
+            src="/images/about/logo-about.svg"
+            alt="Logo Creamidia"
+            width={350}
+            height={350}
+          />
         </div>
 
         <div className="content-area">
@@ -13,9 +19,7 @@ export default function About() {
             <p>Sobre nós</p>
             <hr />
             <h2>
-              Sua visão,
-              <br />
-              Nossa <span>experiência.</span>
+              Sua visão, Nossa <span>experiência.</span>
             </h2>
           </div>
 
