@@ -1,0 +1,81 @@
+#authority {
+  min-height: 600px;
+  background-color: var(--light);
+  padding: 120px 16px;
+}
+
+#authority .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+#authority .content-area {
+  text-align: center;
+
+  max-width: 55%;
+}
+
+#authority .content-area h2 {
+  margin-top: 32px;
+  line-height: 62px;
+  margin-bottom: 64px;
+  font-size: clamp(2rem, 1.5rem + 2.5vw, 3.25rem);
+}
+
+#authority .content-area span {
+  color: var(--purple-secondary);
+}
+
+#authority .content-area h2 span {
+  font-size: clamp(2rem, 1.5rem + 2.5vw, 3.25rem);
+}
+
+#authority .content-area > div p {
+  font-size: 14px;
+  letter-spacing: 6px;
+  margin-bottom: 12px;
+}
+
+#authority .content-area > p {
+  line-height: 32px;
+}
+
+#authority .content-area hr {
+  margin: 0 auto;
+  width: 62%;
+  border: 1px solid var(--purple-secondary);
+}
+
+#authority .card-area {
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-around;
+  text-align: justify;
+  gap: 62px;
+  width: 100%;
+}
+
+#authority .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  max-width: 33%;
+}
+
+#authority .card-image {
+  width: 120px;
+  height: 120px;
+  background-color: aqua;
+  border-radius: 100%;
+  margin-bottom: 16px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#authority .card p {
+  line-height: 32px;
+}
