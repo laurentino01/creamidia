@@ -1,0 +1,48 @@
+#about {
+  min-height: 600px;
+  background-color: var(--purple-primary);
+  padding: 120px 16px;
+}
+
+#about .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#about .content-area p {
+  color: var(--light);
+}
+
+#about .content-area {
+  text-align: left;
+  margin-bottom: 82px;
+}
+
+#about .content-area h2 {
+  margin-top: 32px;
+  line-height: 52px;
+  margin-bottom: 64px;
+  font-size: clamp(2.625rem, 2.375rem + 1.25vw, 3.25rem);
+  white-space: nowrap;
+  color: var(--light);
+}
+
+#about .content-area span {
+  color: var(--green);
+}
+
+#about .content-area h2 span {
+  font-size: clamp(2.625rem, 2.375rem + 1.25vw, 3.25rem);
+}
+
+#about .content-area > div p {
+  font-size: 14px;
+  letter-spacing: 6px;
+  margin-bottom: 12px;
+}
+
+#about .content-area hr {
+  width: 12%;
+  border: 1px solid var(--green);
+}

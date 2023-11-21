@@ -14,6 +14,7 @@ export default function Dashboard() {
 
   const handleUserInfo = useCallback(async () => {
     const infos = await userService.getUserInfo(auth.token as string);
+
     setUser(infos);
   }, [auth]);
 

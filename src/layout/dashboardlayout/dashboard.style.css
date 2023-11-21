@@ -57,6 +57,7 @@
   width: 100%;
   border-bottom: 1px solid var(--light);
   transition: 0.3s;
+  white-space: nowrap;
 }
 
 /* When you mouse over the navigation links, change their color */

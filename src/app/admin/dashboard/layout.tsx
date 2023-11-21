@@ -20,8 +20,7 @@ export default function DashboardLayout({
 
   return (
     <>
-      <DashboardTemplate />
-      {children}
+      <DashboardTemplate>{children}</DashboardTemplate>
     </>
   );
 }

@@ -3,10 +3,26 @@
 import Link from "next/link";
 import "./dashboard.style.css";
 import Image from "next/image";
-import { useCallback, useState } from "react";
+import { useCallback, useContext, useState } from "react";
+import { AuthContext } from "@/context/AuthContext";
+import { useRouter } from "next/navigation";
 
-export default function DashboardTemplate() {
+export default function DashboardTemplate({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   const [isHidden, setIsHidden] = useState("hidden");
+  const authContext = useContext(AuthContext);
+  const router = useRouter();
+  const handleLogout = useCallback(
+    async (e: React.MouseEvent) => {
+      e.preventDefault();
+      await authContext.handleAuthServiceLogout();
+      router.push("/");
+    },
+    [authContext, router]
+  );
 
   const handleChangeIcon = useCallback(() => {
     setIsHidden(isHidden === "hidden" ? "show" : "hidden");
@@ -28,14 +44,12 @@ export default function DashboardTemplate() {
           </div>
 
           <div className="logo-area">
-            <Link href={"/"}>
-              <Image
-                src={"/images/logoWhite.svg"}
-                alt="Logo creamidia"
-                width={144}
-                height={67}
-              />
-            </Link>
+            <Image
+              src={"/images/logoWhite.svg"}
+              alt="Logo creamidia"
+              width={144}
+              height={67}
+            />
           </div>
         </div>
 
@@ -46,14 +60,22 @@ export default function DashboardTemplate() {
               isHidden === "hidden" ? "hiddenSideBar" : "showSideNav"
             } sidenav`}
           >
-            <Link href="#">
-              Administrar <br />
-              dumps
+            <Link href="#">Administrar dumps</Link>
+            <Link href={"/admin"} onClick={(e) => handleLogout(e)}>
+              Sair
             </Link>
-            <Link href="#">Sair</Link>
           </div>
         </nav>
       </header>
+      <div
+        className="container"
+        style={{
+          marginLeft: isHidden === "hidden" ? "20px" : "320px",
+          transition: "0.5s",
+        }}
+      >
+        {children}
+      </div>
     </section>
   );
 }
