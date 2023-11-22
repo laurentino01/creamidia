@@ -65,6 +65,11 @@
   max-width: 33%;
 }
 
+#authority .card p span {
+  color: var(--purple-secondary);
+  font-weight: 600;
+}
+
 #authority .card-image {
   width: 120px;
   height: 120px;
