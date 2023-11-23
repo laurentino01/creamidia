@@ -1,8 +1,8 @@
-import About from "@/components/about/About";
-import Authority from "@/components/authority/Authority";
+import About from "@/app/homeComponents/about/About";
+import Authority from "@/app/homeComponents/authority/Authority";
 import Header from "@/components/header/Header";
-import Hero from "@/components/hero/Hero";
-import Testimonials from "@/components/testimonials/Testimonials";
+import Hero from "@/app/homeComponents/hero/Hero";
+import Testimonials from "@/app/homeComponents/testimonials/Testimonials";
 
 export default function Home() {
   return (
