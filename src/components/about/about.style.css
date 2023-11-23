@@ -22,26 +22,16 @@
 }
 
 #about .content-area h2 {
-  margin-top: 32px;
-  line-height: 62px;
-  margin-bottom: 64px;
-  font-size: clamp(2rem, 1.5rem + 2.5vw, 3.25rem);
+  /*  margin-top: 32px; */
+  /*  line-height: 62px; */
+  /*  margin-bottom: 64px; */
+  /*  font-size: clamp(2rem, 1.5rem + 2.5vw, 3.25rem); */
 
   color: var(--light);
 }
 
 #about .content-area span {
   color: var(--green);
-}
-
-#about .content-area h2 span {
-  font-size: clamp(2rem, 1.5rem + 2.5vw, 3.25rem);
-}
-
-#about .content-area > div p {
-  font-size: 14px;
-  letter-spacing: 6px;
-  margin-bottom: 12px;
 }
 
 #about .content-area > p {

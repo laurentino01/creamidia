@@ -16,24 +16,14 @@
 }
 
 #authority .content-area h2 {
-  margin-top: 12px;
-  line-height: 42px;
-  margin-bottom: 32px;
-  font-size: clamp(2rem, 1.5rem + 2.5vw, 3.25rem);
+  /*   margin-top: 12px; */
+  /*   line-height: 42px; */
+  /*  margin-bottom: 32px; */
+  /* font-size: clamp(2rem, 1.5rem + 2.5vw, 3.25rem); */
 }
 
 #authority .content-area span {
   color: var(--purple-secondary);
-}
-
-#authority .content-area h2 span {
-  font-size: clamp(2rem, 1.5rem + 2.5vw, 3.25rem);
-}
-
-#authority .content-area > div p {
-  font-size: 14px;
-  letter-spacing: 6px;
-  margin-bottom: 12px;
 }
 
 #authority .content-area > p {

@@ -6,7 +6,7 @@ export default function Authority() {
       <div className="container">
         <div className="content-area">
           <div>
-            <p>Porquê nos escolher</p>
+            <p className="paragraph-spaced">Porquê nos escolher</p>
             <hr />
             <h2>
               Nossa<span> reputação</span> <br />

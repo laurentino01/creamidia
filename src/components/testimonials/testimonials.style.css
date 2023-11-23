@@ -16,22 +16,8 @@
   margin-bottom: 82px;
 }
 
-#testimonials .content-area h2 {
-  margin-top: 32px;
-  line-height: 42px;
-  font-size: clamp(2.625rem, 2.375rem + 1.25vw, 3.25rem);
-  white-space: nowrap;
-}
-
 #testimonials .content-area h2 span {
-  font-size: clamp(2.625rem, 2.375rem + 1.25vw, 3.25rem);
   color: var(--purple-secondary);
-}
-
-#testimonials .content-area p {
-  font-size: 14px;
-  letter-spacing: 6px;
-  margin-bottom: 12px;
 }
 
 #testimonials .content-area hr {

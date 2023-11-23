@@ -30,6 +30,20 @@ body {
   margin-right: auto;
 }
 
+h2 {
+  font-size: clamp(2rem, 1.5rem + 2.5vw, 3.25rem);
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+
+h2 span {
+  font-size: clamp(2rem, 1.5rem + 2.5vw, 3.25rem);
+}
+
+.paragraph-spaced {
+  letter-spacing: 6px;
+  margin-bottom: 12px;
+}
 /* components */
 
 /* BUTTON */

@@ -8,7 +8,7 @@ export default function Testimonials() {
         <div className="container">
           <div className="content-area">
             <div>
-              <p>nossos clientes</p>
+              <p className="paragraph-spaced">nossos clientes</p>
               <hr />
               <h2>
                 Trabalhamos <br /> com os <span> maiores</span>

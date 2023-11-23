@@ -16,7 +16,7 @@ export default function About() {
 
         <div className="content-area">
           <div>
-            <p>Sobre nós</p>
+            <p className="paragraph-spaced">Sobre nós</p>
             <hr />
             <h2>
               Sua visão, Nossa <span>experiência.</span>
