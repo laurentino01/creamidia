@@ -19,7 +19,7 @@ export default function About() {
             <p className="paragraph-spaced">Sobre nós</p>
             <hr />
             <h2>
-              Sua visão, Nossa <span>experiência.</span>
+              Sua visão, nossa <span>experiência.</span>
             </h2>
           </div>
 
