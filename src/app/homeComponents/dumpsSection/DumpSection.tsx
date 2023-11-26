@@ -1,4 +1,3 @@
-import Image from "next/image";
 import "./dumpSection.style.css";
 import CardDump from "./DumpCard";
 
