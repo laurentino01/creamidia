@@ -1,0 +1,37 @@
+#dumpSection {
+  min-height: 600px;
+  padding: 120px 20px;
+  background-color: var(--light);
+}
+
+#dumpSection .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+}
+
+#dumpSection .content-area {
+  text-align: center;
+}
+
+#dumpSection .content-area span {
+  color: var(--purple-secondary);
+}
+
+#dumpSection .content-area > p {
+  line-height: 32px;
+}
+
+#dumpSection .content-area hr {
+  margin: 0 auto;
+  width: 62%;
+  border: 1px solid var(--purple-secondary);
+}
+
+#dumpSection .dumpCard-area {
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+}
