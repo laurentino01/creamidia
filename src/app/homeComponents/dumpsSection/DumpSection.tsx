@@ -4,16 +4,16 @@ import CardDump from "./DumpCard";
 export default function DumpSection() {
   const dumpList = [
     {
-      mesAno: "Outubro 2023",
-      color: "purple-secondary",
+      mesAno: "Dezembro 2023",
+      color: "dark",
     },
     {
       mesAno: "Novembro 2023",
       color: "green",
     },
     {
-      mesAno: "Dezembro 2023",
-      color: "dark",
+      mesAno: "Outubro 2023",
+      color: "purple-secondary",
     },
   ];
 
