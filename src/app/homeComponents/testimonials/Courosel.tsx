@@ -50,12 +50,12 @@ export default function Courosel() {
       name: "Daniel Dourado",
       function: "Real State e Empresário",
     },
-    {
+    /*  {
       index: 7,
       img: "gui.webp",
       name: "Gui Oliveira",
       function: "Youtuber e Empresário",
-    },
+    }, */
   ]);
 
   return (

@@ -18,11 +18,11 @@ export default function Header() {
           </Link>
         </div>
 
-        <MenuMobile />
+        {/*   <MenuMobile /> */}
 
         <nav className="menu-desktop">
           <ul>
-            <li>
+            {/*    <li>
               <Link href={"#"}> Início </Link>
             </li>
             <li>
@@ -30,7 +30,7 @@ export default function Header() {
             </li>
             <li>
               <Link href={"#"}> Dumps </Link>
-            </li>
+            </li> */}
             <li>
               <button className="btn btn-green"> Faça um orçamento </button>
             </li>
