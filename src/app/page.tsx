@@ -5,6 +5,7 @@ import Hero from "@/app/homeComponents/hero/Hero";
 import Testimonials from "@/app/homeComponents/testimonials/Testimonials";
 import Steps from "./homeComponents/steps/Steps";
 import DumpSection from "./homeComponents/dumpsSection/DumpSection";
+import Cta from "./homeComponents/cta/Cta";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Authority />
       <Steps />
       <DumpSection />
+      <Cta />
     </main>
   );
 }
