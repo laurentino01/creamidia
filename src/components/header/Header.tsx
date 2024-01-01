@@ -8,11 +8,7 @@ export default function Header() {
     <header id="header">
       <div className="container">
         <div className="logo-area">
-          <Link
-            href={
-              "https://api.whatsapp.com/send?phone=5555519977012&text=Ol%C3%A1,%20gostaria%20de%20pedir%20um%20or%C3%A7amento%20gr%C3%A1tis.%20"
-            }
-          >
+          <Link href={"/"}>
             <Image
               src={"/images/logoWhite.svg"}
               alt="Logo creamidia"
@@ -36,7 +32,14 @@ export default function Header() {
               <Link href={"#"}> Dumps </Link>
             </li> */}
             <li>
-              <button className="btn btn-green"> Faça um orçamento </button>
+              <Link
+                className="btn btn-green"
+                href={
+                  "https://api.whatsapp.com/send?phone=5555519977012&text=Ol%C3%A1,%20gostaria%20de%20pedir%20um%20or%C3%A7amento%20gr%C3%A1tis.%20"
+                }
+              >
+                <button className="btn btn-green"> Faça um orçamento </button>
+              </Link>
             </li>
           </ul>
         </nav>

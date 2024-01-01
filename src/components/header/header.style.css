@@ -27,7 +27,7 @@
   margin-left: 12px;
 }
 
-#header .menu-desktop ul li a {
+#header .menu-desktop ul li a:not(.btn) {
   color: var(--light);
   padding: 22px 16px;
   text-decoration: none;

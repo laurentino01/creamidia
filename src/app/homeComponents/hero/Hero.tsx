@@ -1,5 +1,6 @@
 import { paytoone } from "@/app/layout";
 import "./hero.style.css";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -18,7 +19,13 @@ export default function Hero() {
               <span className={`${paytoone.className}`}>do seu conteúdo</span>
             </h1>
           </div>
-          <button className="btn btn-green">Faça um orçamento</button>
+          <Link
+            href={
+              "https://api.whatsapp.com/send?phone=5555519977012&text=Ol%C3%A1,%20gostaria%20de%20pedir%20um%20or%C3%A7amento%20gr%C3%A1tis.%20"
+            }
+          >
+            <button className="btn btn-green">Faça um orçamento</button>
+          </Link>
         </div>
 
         <div className="video-area">
