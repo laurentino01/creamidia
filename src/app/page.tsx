@@ -6,6 +6,7 @@ import Testimonials from "@/app/homeComponents/testimonials/Testimonials";
 import Steps from "./homeComponents/steps/Steps";
 import DumpSection from "./homeComponents/dumpsSection/DumpSection";
 import Cta from "./homeComponents/cta/Cta";
+import Footer from "./homeComponents/footer/Footer";
 
 export default function Home() {
   return (
@@ -16,8 +17,9 @@ export default function Home() {
       <About />
       <Authority />
       <Steps />
-      <DumpSection />
+      {/* <DumpSection /> */}
       <Cta />
+      <Footer />
     </main>
   );
 }
