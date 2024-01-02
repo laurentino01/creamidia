@@ -5,8 +5,8 @@ export default function Authority() {
     {
       bgImg: "neagle.png",
       paragraph:
-        "Essa produtora é top! Os editoresão artistas,transformaram meus vídeos em puro sucesso.",
-      name: "Neagle Trindade",
+        "Essa produtora é top! Os editores são artistas, transformaram meus vídeos em puro sucesso.",
+      name: "Neagle",
     },
     {
       bgImg: "joao-caetano.webp",
