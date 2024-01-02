@@ -35,7 +35,7 @@ export default function Header() {
               <Link
                 className="btn btn-green"
                 href={
-                  "https://api.whatsapp.com/send?phone=5555519977012&text=Ol%C3%A1,%20gostaria%20de%20pedir%20um%20or%C3%A7amento%20gr%C3%A1tis.%20"
+                  "https://api.whatsapp.com/send?phone=5551997701236&text=Ol%C3%A1!%20gostaria%20de%20fazer%20um%20or%C3%A7amento.%20"
                 }
               >
                 <button className="btn btn-green"> Faça um orçamento </button>
