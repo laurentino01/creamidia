@@ -27,7 +27,7 @@ export default function About() {
             Eu, Wesley, fundador da Creamídia, descobri minha paixão pela edição
             de vídeos como um hobby divertido para o meu canal no YouTube.{" "}
             <br /> <br /> Com o tempo, essa paixão se transformou em uma
-            profissão. Começamos <span> editando</span>
+            profissão. Começamos <span> editando </span>
             vídeos para canais pequenos até chegarmos a trabalhar com grandes
             canais no Brasil.
             <br /> <br /> Hoje, expandimos nossos serviços para além do YouTube,
