@@ -5,7 +5,7 @@ export default function Authority() {
     {
       bgImg: "neagle.webp",
       paragraph:
-        "Trabalhar com Wesley foi uma experiência incrível. Sua edição excepcional e feedback valioso elevaram meu conteúdo",
+        "Trabalhar com Wesley foi uma experiência incrível. Sua edição excepcional e feedback valioso elevaram meu conteúdo.",
       name: "Neagle",
     },
     {
