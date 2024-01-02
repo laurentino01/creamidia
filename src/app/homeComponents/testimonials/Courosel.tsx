@@ -24,8 +24,8 @@ export default function Courosel() {
       function: "Youtuber e Empresário",
     },
     {
-      img: "rapi.webp",
-      name: "Rapi",
+      img: "rappi.webp",
+      name: "Rappi",
       function: "Empresa",
     },
     {
