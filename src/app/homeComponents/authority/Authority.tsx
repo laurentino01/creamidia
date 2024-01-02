@@ -3,9 +3,9 @@ import "./authority.style.css";
 export default function Authority() {
   const list = [
     {
-      bgImg: "neagle.png",
+      bgImg: "neagle.webp",
       paragraph:
-        "Tive o prazer de trabalhar com o Wesley em diversos projetos e devo dizer que foi uma experiência incrível. Wesley não apenas fez um trabalho incrível ao editar meu trabalho, mas também me forneceu feedback e sugestões inestimáveis ​​que me ajudaram a levar meu conteúdo para o próximo nível.",
+        "Trabalhar com Wesley foi uma experiência incrível. Sua edição excepcional e feedback valioso elevaram meu conteúdo",
       name: "Neagle",
     },
     {
