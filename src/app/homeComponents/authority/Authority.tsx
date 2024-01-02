@@ -5,7 +5,7 @@ export default function Authority() {
     {
       bgImg: "neagle.png",
       paragraph:
-        "Essa produtora é top! Os editores são artistas, transformaram meus vídeos em puro sucesso.",
+        "Tive o prazer de trabalhar com o Wesley em diversos projetos e devo dizer que foi uma experiência incrível. Wesley não apenas fez um trabalho incrível ao editar meu trabalho, mas também me forneceu feedback e sugestões inestimáveis ​​que me ajudaram a levar meu conteúdo para o próximo nível.",
       name: "Neagle",
     },
     {
