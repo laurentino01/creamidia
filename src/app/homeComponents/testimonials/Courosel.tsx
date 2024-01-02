@@ -6,7 +6,6 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import "./courosel.style.css";
 
 interface ITestimonialsData {
-  index: number;
   img: string;
   name: string;
   function: string;
@@ -15,53 +14,71 @@ interface ITestimonialsData {
 export default function Courosel() {
   const [testimonials, setTestimonials] = useState<ITestimonialsData[]>([
     {
-      index: 1,
       img: "whindersson-nunes-3.png",
       name: "Whindersson Nunes",
       function: "Comediante e Ator",
     },
     {
-      index: 2,
       img: "jhon-vlogs.png",
       name: "Jon Vlogs",
       function: "Youtuber e Empresário",
     },
     {
-      index: 3,
-      img: "joao-caetano.png",
-      name: "João Caetano",
-      function: "Youtuber e Empresário",
+      img: "rapi.webp",
+      name: "Rapi",
+      function: "Empresa",
     },
     {
-      index: 4,
       img: "neox.png",
       name: "Gabriel Neox",
       function: "Youtuber e Empresário",
     },
     {
-      index: 5,
-      img: "viros.webp",
-      name: "Viros",
-      function: "Youtuber e Empresário",
+      img: "AliExpress.webp",
+      name: "AliExpress",
+      function: "Empresa",
     },
     {
-      index: 6,
       img: "daniel-dourado.webp",
       name: "Daniel Dourado",
       function: "Real State e Empresário",
     },
-    /*  {
-      index: 7,
-      img: "gui.webp",
-      name: "Gui Oliveira",
-      function: "Youtuber e Empresário",
-    }, */
+    {
+      img: "Balian.webp",
+      name: "Balian",
+      function: "Youtuber e Empresario",
+    },
+    {
+      img: "MikeShake.webp",
+      name: "Mike Shake",
+      function: "Youtuber e Empresario",
+    },
+    {
+      img: "DanielPenin.webp",
+      name: "Daniel Penin",
+      function: "Empresario e Apresentador",
+    },
+    {
+      img: "Bocade09.webp",
+      name: "Boca de 09",
+      function: "Influencer",
+    },
+    {
+      img: "GKAY.webp",
+      name: "GKAY",
+      function: "Atriz e Comediante",
+    },
+    {
+      img: "NGCASH.webp",
+      name: "NG.CASH",
+      function: "Empresa",
+    },
   ]);
 
   return (
     <div className="courosel" id="courosel">
       {testimonials.map((item) => (
-        <div className="courosel-card" key={item.index}>
+        <div className="courosel-card" key={item.img}>
           <div
             className="coursel-image"
             style={{
