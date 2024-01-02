@@ -14,10 +14,10 @@ export default function Authority() {
       name: "João Caetano",
     },
     {
-      bgImg: "virus.webp",
+      bgImg: "viros.webp",
       paragraph:
         "ele é diferente, sempre tem uma surpresa para nos mostrar e o trabalho deles é sempre de muita qualidade!",
-      name: "Virus",
+      name: "Viros",
     },
     {
       bgImg: "lostnunbound.webp",
